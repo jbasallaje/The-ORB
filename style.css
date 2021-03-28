@@ -1,0 +1,130 @@
+/* Basic Elements */
+
+body
+{
+	text-align: center;
+	font-family:'Open Sans', sans-serif;
+}
+
+h1 
+{	
+	font-weight: normal;
+	font-family:'Crete Round', serif;
+}
+
+h2
+{
+	font-weight: normal;
+	font-size: xx-large;
+	font-family:'Crete Round', serif;
+	margin: 20px 0px 30px
+}
+
+p
+{
+	width: 90%; 
+	max-width: 500px;
+	font-family:'Open Sans', sans-serif;
+}
+
+/* Particulars */
+
+.card, .title, #rights
+{
+	margin: 50px 0px 100px;
+	display: flex; 
+	flex-direction: column;
+	align-items: center;
+}
+
+.cardAnimate 
+{
+	animation-name: fadeIn;
+	animation-duration: 3s;
+}
+
+.title
+{
+	margin: 0px 0px 0px;
+	animation-name: fadeIn;
+	animation-duration: 3s;
+}
+
+.line 
+{
+	width:175px; opacity:0.5
+}
+
+.link
+{ 
+	padding-right: 10px;
+}
+
+#prompt
+{
+	margin: 50px 0px 100px;
+	opacity: 0;
+	animation-name: fadeIn;
+	animation-fill-mode: forwards;
+	animation-duration: 3s;
+	animation-delay: 1s;
+}
+
+#rights
+{
+	font-size:0.75em;
+	margin:300px 0px 0px;
+}
+
+.button
+{
+	position:fixed; bottom:100px; right:5%;  
+	background-color:rgb(250, 250, 250); /* opacity:0.5; */ border-radius:90px;
+	box-shadow:5px 10px 20px grey;
+}
+
+.button:hover 
+{
+	background-color:rgb(250, 250, 250); /* opacity:0.5; */ border-radius:90px;
+	box-shadow:8px 12px 25px grey;
+}
+
+.profileImage
+{
+	margin: 75px 0px 75;
+}
+
+.responsive{
+	max-width: 80%;
+	height: auto;
+	margin-top: 10px; margin-bottom: 10px;
+	box-shadow:0px 5px 12px grey;
+  }
+
+.cover{
+	height: 500px;
+}  
+
+.hero{
+	max-width: 100%;
+}
+
+.liImage 
+{
+	width: 22px;
+    height: 22px;
+    padding: 15px;
+}
+
+ .liImage:hover
+ {
+	width: 23px;
+    height: 23px;
+    padding: 16px;
+ }
+
+ @media (min-width: 600px){
+	.hero{
+		max-width: 50%;
+	}
+ }
